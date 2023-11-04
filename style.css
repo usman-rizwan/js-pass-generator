@@ -1,0 +1,49 @@
+*{
+    font-family:"Poppins", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.my-text{
+    width: 200px;
+    border: 0px !important;
+    border-bottom: 2px solid #5e6c84 !important;
+    outline: 0px !important;
+}
+.my-text:disabled{
+    background-color: white;
+}
+.my-text::placeholder{
+    font-size: 12px;
+}
+.nav-link{
+    color: #3b71ca;
+} 
+.copy{
+    cursor:not-allowed;
+    border: 0px ;
+    background-color: white;
+    
+}
+@media screen and (max-width: 400px) {
+    .my-text{
+        width: 170px ;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .btn{
+        /* width: 100px; */
+        font-size: 10px;
+    }
+    .my-text::placeholder{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .my-text{
+        width: 100px ;
+    }
+    
+    .btn{
+        /* width: 100px; */
+        font-size: 8px;
+    }
+}
