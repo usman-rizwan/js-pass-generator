@@ -1,2 +1,1 @@
-# js-pass-generator
-js-pass-generator-us.netlify.app
+https://js-pass-generator-us.netlify.app
