@@ -152,20 +152,5 @@ function copyText() {
   setTimeout(() => {
     copyItm.innerHTML = `Copy <i class="fa-solid fa-copy mt-1 ml-2"></i>`
   }, 1500);
-  const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 1300,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.addEventListener('mouseenter', Swal.stopTimer)
-      toast.addEventListener('mouseleave', Swal.resumeTimer)
-    }
-  })
-
-  Toast.fire({
-    icon: 'success',
-    title: 'Copied !'
-  })
+  
 }
