@@ -54,7 +54,7 @@ function checkPass() {
       });
       Toast.fire({
         icon: "error",
-        html: `Password must be contain upper case charachters <i class="fa-solid fa-arrow-down-a-z"></i>`
+        html: `Password must be contain lower case charachters <i class="fa-solid fa-arrow-down-a-z"></i>`
       });
     }
     else if (!inputCheck.value.match(upperCaseLetters)) {
