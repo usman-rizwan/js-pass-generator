@@ -39,7 +39,7 @@ function checkPass() {
   var upperCaseLetters = /[A-Z]/g;
   var numbers = /[0-9]/g
   var specialCharactres = /[!@#$%^&*+=._-]/g
-  if (inputCheck.value.length >= 8) {
+  if (inputCheck.value.trim().length >= 8) {
     if (!inputCheck.value.match(lowerCaseLetters)) {
       const Toast = Swal.mixin({
         toast: true,
@@ -123,6 +123,7 @@ function checkPass() {
         icon: "success",
         html: `Your Password Is Strong <i class="fa-regular fa-face-smile"></i>`,
       });
+      inputCheck.value = ""
     }
   } else {
     const Toast = Swal.mixin({
