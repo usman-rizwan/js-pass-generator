@@ -45,6 +45,10 @@
     #check-input::placeholder{
         font-size: 10px;
     }
+    body.swal2-toast-shown .swal2-container {
+        width: 250px;
+        font-size: 2px;
+    }
 }
 @media screen and (max-width: 300px) {
     .my-text{
