@@ -105,7 +105,7 @@ function checkPass() {
       });
       Toast.fire({
         icon: "error",
-        html: `Password must be contain numbers <i class="fa-solid fa-arrow-up-9-1"></i>`
+        html: `Password must be contain numbers <i class="fa-solid fa-list-ol"></i></i>`
       });
     } else {
       const Toast = Swal.mixin({
