@@ -50,8 +50,8 @@
           <input disabled class="card-title my-text" id="pass-h" placeholder="Your password will appear here" />
 
           <p class="card-text"></p>
-          <a  class="btn btn-primary mt-2" onclick="genPass()">Generate Password</a>
-          <a  class="btn btn-primary mt-2 funny" onclick="funnyPass()">Funny Password</a>
+          <a class="btn btn-primary mt-2" onclick="genPass()">Generate Password</a>
+          <a class="btn btn-primary mt-2 funny" onclick="funnyPass()">Funny Password</a>
         </div>
         <!-- <div class="card-footer text-muted">2 days ago</div> -->
       </div>
@@ -59,11 +59,13 @@
     <!-- Jumbotron -->
     <div class="container mt-5 mb-14 w-50">
       <h2 class="color">Password Validator</h2>
-      <div class="form-group">
-        <label for="additionalInfo">Enter Password To Check:</label>
-        <input type="text" class="form-control"  id="check-input" placeholder="Enter your password here" />
-        <a  class="btn btn-primary mt-2" onclick="checkPass()">Check Password</a>
+      <div class="form-outline ">
+        <input type="text" class="form-control" id="check-input" placeholder="Enter your password here"
+          data-mdb-showcounter="true" maxlength="15" />
+        <label class="form-label" for="form16">Enter Password To Check</label>
+        <div class="form-helper"></div>
       </div>
+      <a class="btn btn-primary mt-2 my-btn" onclick="checkPass()">Check Password</a>
     </div>
   </div>
   <!-- MDB -->

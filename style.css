@@ -41,13 +41,18 @@
     }
     .my-text::placeholder{
         font-size: 8px;
+    }.form-label{
+        font-size: 10px;
     }
     #check-input::placeholder{
-        font-size: 10px;
+        font-size: 10px ;
     }
     body.swal2-toast-shown .swal2-container {
         width: 250px;
         font-size: 2px;
+    }
+    .my-btn{
+        margin-top: 23px !important;
     }
 }
 @media screen and (max-width: 300px) {
