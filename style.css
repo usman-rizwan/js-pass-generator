@@ -27,6 +27,7 @@
 }
 .fa-solid{
     font-size: 25px !important;
+}
 @media screen and (max-width: 400px) {
     .my-text{
         width: 170px ;
