@@ -13,15 +13,20 @@
 .my-text::placeholder{
     font-size: 12px;
 }
-.nav-link{
+.color{
     color: #3b71ca;
 } 
+.funny{
+    background-color: #0376f9 !important;
+}
 .copy{
     cursor:not-allowed;
     border: 0px ;
     background-color: white;
     
 }
+.fa-solid{
+    font-size: 25px !important;
 @media screen and (max-width: 400px) {
     .my-text{
         width: 170px ;

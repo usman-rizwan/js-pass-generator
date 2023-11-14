@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pass Generator</title>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet" />
-    <!-- MDB -->  
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"rel="stylesheet"/>
-    <!-- CSS-->  
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div>
-      <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarExample01"
-              aria-controls="navbarExample01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link " aria-current="page" href="#">Password Generator</a>
-                </li>
-              </ul>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pass Generator</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <!-- CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link color" aria-current="page" href="#">Password Generator</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-        <!-- Navbar -->
-      </header>
-      <!-- Jumbotron -->
-      <div class="p-5 text-center bg-light container" style="margin-top: 58px">
-        <div class="card text-center">
-          <div class="card-header" >
-            Password Generator <i class="fa-solid fa-lock"></i>
-          </div>
-          <div class="card-body">
-            <div class="d-flex justify-content-end">
-            <button class="copy" disabled id="copyItm" onclick="copyText()"> Copy <i class="fa-solid fa-copy mt-1 ml-2"></i></button>
-          </div>
-            <input disabled class="card-title my-text" id="pass-h" placeholder="Your password will appear here"
-            />
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary mt-2" onclick="genPass()"
-              >Generate Password</a
-            >
-          </div>
-          <!-- <div class="card-footer text-muted">2 days ago</div> -->
         </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!-- Jumbotron -->
+    <div class="p-5 text-center bg-light container" style="margin-top: 80px">
+      <div class="card text-center">
+        <div class="card-header">
+          Password Generator <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-end">
+            <button class="copy" disabled id="copyItm" onclick="copyText()"> Copy <i
+                class="fa-solid fa-copy mt-1 ml-2"></i></button>
+          </div>
+          <input disabled class="card-title my-text" id="pass-h" placeholder="Your password will appear here" />
+
+          <p class="card-text"></p>
+          <a  class="btn btn-primary mt-2" onclick="genPass()">Generate Password</a>
+          <a  class="btn btn-primary mt-2 funny" onclick="funnyPass()">Funny Password</a>
+        </div>
+        <!-- <div class="card-footer text-muted">2 days ago</div> -->
       </div>
-      <!-- Jumbotron -->
     </div>
-    <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="app.js"></script>
-  </body>
+    <!-- Jumbotron -->
+    <div class="container mt-5 w-50">
+      <h2 class="color">Password Validator</h2>
+      <div class="form-group">
+        <label for="additionalInfo">Enter Password To Check:</label>
+        <input type="text" class="form-control"  id="check-input" placeholder="Enter your password here" />
+        <a  class="btn btn-primary mt-2" onclick="checkPass()">Check Password</a>
+      </div>
+    </div>
+  </div>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
